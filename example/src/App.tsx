@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./app.css";
-import { DataTable } from "react-data-grid-table";
+import { DataTable } from "react-jquery-data-table";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { GetCountries } from "react-country-state-city";
 export default function App() {
