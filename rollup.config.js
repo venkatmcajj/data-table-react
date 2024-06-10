@@ -5,7 +5,6 @@ const json = require("@rollup/plugin-json");
 const peerDepsExternal = require("rollup-plugin-peer-deps-external");
 const resolve = require("@rollup/plugin-node-resolve");
 const commonjs = require("@rollup/plugin-commonjs");
-const sass = require("rollup-plugin-sass");
 module.exports = {
     input: "src/index.ts",
     output: [
@@ -23,7 +22,7 @@ module.exports = {
             file: pkg.browser,
             format: "umd",
             sourcemap: true,
-            name: 'ReactCountryStateCity'
+            name: 'DataTableReact'
         }
     ],
     plugins: [
