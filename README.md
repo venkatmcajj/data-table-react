@@ -1,16 +1,16 @@
-# Data-table-react
+# React-Data-Grid-Table
 
 Welcome to DataTableReact, your ultimate solution for integrating jQuery DataTable-like functionality into React components! With DataTableReact, effortlessly enhance your React applications with dynamic and responsive data tables. Harness a rich array of customizable options, empowering you to efficiently manage and visualize data within your projects. Seamlessly integrate DataTableReact into your workflow for streamlined data presentation and enhanced user experience.
 
 ## Installation
 
 ```
-$ npm install --save data-table-react
-$ yarn add data-table-react
+$ npm install --save react-data-grid-table
+$ yarn add react-data-grid-table
 
 $ import {
   DataTable,
-} from "data-table-react";
+} from "react-data-grid-table";
 ```
 
 ## Features
@@ -32,7 +32,7 @@ $ import {
 
 ```jsx
 import React, { useEffect, useState } from "react";
-import { DataTable } from "data-table-react";
+import { DataTable } from "react-data-grid-table";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { GetCountries } from "react-country-state-city";
 export default function App() {

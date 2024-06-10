@@ -31,6 +31,6 @@
     "util": "^0.12.5"
   },
   "dependencies": {
-    "data-table-react": "1.0.0"
+    "react-data-grid-table": "1.0.0"
   }
 }
