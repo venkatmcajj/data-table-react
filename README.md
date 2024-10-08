@@ -8,8 +8,14 @@ Welcome to DataTableReact, your ultimate solution for integrating jQuery DataTab
 $ npm install --save react-jquery-data-table
 $ yarn add react-jquery-data-table
 
+// For DataTable
 $ import {
   DataTable,
+} from "react-jquery-data-table";
+
+// For PageNation
+$ import {
+  PageNation,
 } from "react-jquery-data-table";
 ```
 
@@ -62,7 +68,6 @@ export default function App() {
     />
   );
 }
-
 ```
 
 ### Data Table Example
@@ -73,26 +78,61 @@ export default function App() {
 
 Properties used to customise the rendering:
 
-| Name               | Type     | Description                                                                             |
-| ------------------ | -------- | --------------------------------------------------------------------------------------- |
-| title       | string  | The title for the table                                          |
-| heads | HeadProps   | Head text for the table head and field name to fetched from data and display in <td>                                                      |
-| data     | Array   | Data records for the table                                                         |
-| currentPage           | number | `optional` Current page in pagination       |
-| itemsperpage       | number | `optional` The number of items you want per page default is 10.                                |
-| hasItemsPerPageDropdown        | boolean   | `optional` Items per page change dropdown are displayed when true and not displayed when false. default is true.                                    |
-| hasPagination           | boolean  | `optional` Bottom pagination buttons are displayed when true and not displayed when false. default is true. |
-| searchEnabled           | boolean  | `optional` Search box are displayed when true and not displayed when false. default is true. |
+| Name                    | Type      | Description                                                                                                      |
+| ----------------------- | --------- | ---------------------------------------------------------------------------------------------------------------- |
+| title                   | string    | The title for the table                                                                                          |
+| heads                   | HeadProps | Head text for the table head and field name to fetched from data and display in <td>                             |
+| data                    | Array     | Data records for the table                                                                                       |
+| currentPage             | number    | `optional` Current page in pagination                                                                            |
+| itemsperpage            | number    | `optional` The number of items you want per page default is 10.                                                  |
+| hasItemsPerPageDropdown | boolean   | `optional` Items per page change dropdown are displayed when true and not displayed when false. default is true. |
+| hasPagination           | boolean   | `optional` Bottom pagination buttons are displayed when true and not displayed when false. default is true.      |
+| searchEnabled           | boolean   | `optional` Search box are displayed when true and not displayed when false. default is true.                     |
 
 ## HeadProps Properties
 
 The same country select properties and additionally
 
-| Name      | Type   | Description                                      |
-| --------- | ------ | ------------------------------------------------ |
-| name | string | `required` Title of the table head |
+| Name      | Type   | Description                                                                   |
+| --------- | ------ | ----------------------------------------------------------------------------- |
+| name      | string | `required` Title of the table head                                            |
 | fieldname | string | `required` Which field of object need to be displayed from data array to <td> |
-| view | FC | `optional` Custom component to display fieldname |
+| view      | FC     | `optional` Custom component to display fieldname                              |
+
+## PageNation
+
+```jsx
+import React, { useState } from "react";
+import "./app.css";
+import { PageNation } from "react-jquery-data-table";
+import "bootstrap/dist/css/bootstrap.min.css";
+export default function App() {
+  const [currentPage, setCurrentPage] = useState(1);
+  return (
+    <PageNation
+      currentPage={currentPage}
+      totalPages={100}
+      onPageChange={(_pageno) => setCurrentPage(_pageno)}
+      className="justify-content-center mb-0 mt-2"
+    />
+  );
+}
+```
+
+### PageNation Example
+
+<img src="https://raw.githubusercontent.com/venkatmcajj/data-table-react/master/example/src/example2.png" alt="React Data Table PageNation example screenshot"/>
+
+## The PageNation Properties
+
+Properties used to customise the rendering:
+
+| Name         | Type     | Description                                                                                                                        |
+| ------------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| currentPage  | number   | `required` The current active page number being displayed.                                                                         |
+| totalPages   | number   | `required` The total number of pages available for pagination.                                                                     |
+| onPageChange | function | Function that gets called when the user requests a page change, typically used to update the current page number in the component. |
+| className    | string   | Custom CSS class applied to the pagination component, allowing for styling adjustments.                                            |
 
 ## Demo
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "jest-canvas-mock";
 import { render } from "@testing-library/react";
-import { DataTable } from "../src";
+import { DataTable, PageNation } from "../src";
 import fetchmock from "jest-fetch-mock";
 fetchmock.dontMock();
 describe("Common render", () => {
@@ -26,5 +26,8 @@ describe("Common render", () => {
         hasPagination={true}
       />
     );
+  });
+  test("renders without crashing", () => {
+    render(<PageNation totalPages={10} currentPage={2} />);
   });
 });

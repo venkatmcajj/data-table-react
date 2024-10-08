@@ -4,7 +4,7 @@ type PageProps = {
   totalPages: number;
   currentPage: number;
   onPageChange?: (pageno: number) => void;
-  className: string;
+  className?: string;
 };
 const CustomPagination = ({
   totalPages,

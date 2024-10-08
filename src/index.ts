@@ -1,2 +1,3 @@
 import DataTable from "./components/DataTable";
-export { DataTable };
+import PageNation from "./components/PageNation";
+export { DataTable, PageNation };

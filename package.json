@@ -1,7 +1,7 @@
 {
   "name": "react-jquery-data-table",
-  "version": "1.0.0",
-  "description": "Welcome to DataTableReact, your ultimate solution for integrating jQuery DataTable-like functionality into React components! With DataTableReact, effortlessly enhance your React applications with dynamic and responsive data tables. Harness a rich array of customizable options, empowering you to efficiently manage and visualize data within your projects. Seamlessly integrate DataTableReact into your workflow for streamlined data presentation and enhanced user experience.",
+  "version": "1.0.1",
+  "description": "react-jquery-data-table is a powerful and flexible React component that integrates jQuery DataTable features with custom pagination support. It allows developers to easily display large datasets in a fully-featured table, with sorting, filtering, and search capabilities. The custom pagination component provides complete control over page navigation, making it highly customizable for a variety of use cases. Whether you're working on an enterprise dashboard or a small project, react-jquery-data-table simplifies data presentation and enhances user experience",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "browser": "dist/umd/index.js",
@@ -36,7 +36,26 @@
     "table-component",
     "data-table-component",
     "react-table",
-    "datagrid"
+    "React Table Pagination Component",
+    "React jQuery DataTable Integration",
+    "Custom Pagination for React DataTable",
+    "React Table with Dynamic Pagination",
+    "Data Table Component for React Apps",
+    "Large Dataset Management in React",
+    "Advanced Sorting in React DataTable",
+    "React Table with Filter and Search",
+    "React Table with Server-side Pagination",
+    "Customizable DataTable in React",
+    "Responsive React Data Grid",
+    "Easy-to-use React DataTable",
+    "Performance-optimized React Table",
+    "React jQuery Table Plugin",
+    "React Data Table with AJAX Support",
+    "Interactive Data Table for React",
+    "Real-time Data Table for React",
+    "React Bootstrap DataTable",
+    "DataTable with jQuery and React Integration",
+    "Fast-loading React DataTable"
   ],
   "author": "Venkatesh",
   "license": "MIT",
@@ -77,7 +96,7 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "style-loader": "^3.3.2",
     "ts-jest": "^29.1.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   },
   "peerDependencies": {
     "react": ">=16"

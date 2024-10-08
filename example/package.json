@@ -31,6 +31,6 @@
     "util": "^0.12.5"
   },
   "dependencies": {
-    "react-jquery-data-table": "1.0.0"
+    "react-jquery-data-table": "^1.0.1"
   }
 }
