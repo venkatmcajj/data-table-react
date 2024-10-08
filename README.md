@@ -1,6 +1,6 @@
 # react-jquery-data-table
 
-Welcome to DataTableReact, your ultimate solution for integrating jQuery DataTable-like functionality into React components! With DataTableReact, effortlessly enhance your React applications with dynamic and responsive data tables. Harness a rich array of customizable options, empowering you to efficiently manage and visualize data within your projects. Seamlessly integrate DataTableReact into your workflow for streamlined data presentation and enhanced user experience.
+react-jquery-data-table is a powerful and flexible React component that integrates jQuery DataTable features with custom pagination support. It allows developers to easily display large datasets in a fully-featured table, with sorting, filtering, and search capabilities. The custom pagination component provides complete control over page navigation, making it highly customizable for a variety of use cases. Whether you're working on an enterprise dashboard or a small project, react-jquery-data-table simplifies data presentation and enhances user experience
 
 ## Installation
 
